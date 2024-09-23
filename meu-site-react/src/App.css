@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  background-color: linear-gradient(180deg, #000428, #004e92);;
+}
+
+.estrelas{
+
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkling 1.5s infinite alternate;
+
+}
+
+@keyframes twinkling {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
