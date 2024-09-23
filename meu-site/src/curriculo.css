@@ -13,29 +13,6 @@
     animation: slideInFromLeft 1s ease-out;
 }
 
-.card {
-    border: 3px solid #ffffff;
-    box-shadow: 0 0 10px rgb(255, 255, 255); 
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.2s;
-    height: 310px; 
-    width: 500px;
-    overflow: hidden; 
-    margin-left: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    
-}
-
-.card h3 {
-    font-size: 1.2rem; /* Reduzir o tamanho do título */
-    color: rgb(255, 255, 255);
-}
-
-.card p {
-    font-size: 0.9rem; /* Reduzir o tamanho do texto */
-    color: rgb(255, 255, 255);
-}
 
 
 .swiper-container {

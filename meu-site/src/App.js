@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import './App.css';
 import Sobremim from './sobre-mim';
 import Currículo from './curriculo';
+import Terra from './terra';
 function App() {
   return (
   <div >
@@ -24,6 +25,9 @@ function App() {
     <Sobremim /> {/* Incluindo sobremim */}
 
     <Currículo /> {/* Incluindo Curriculo */}
+
+    <Terra /> {/* Incluindo terra */}
+
 
 
 
