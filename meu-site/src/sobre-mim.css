@@ -16,6 +16,7 @@
     position: absolute;
     top:80%;
     left:10%;
+    animation: slideInFromLeft 1s ease-out;
 }
 
 /* Container que segura os dois blocos de texto */
@@ -37,9 +38,21 @@
     color: white; 
     font-size: 18px;
     max-width: 30%; /* Ocupa no máximo 45% da largura */
-    height: 200px;
+    height: 300px;
     box-shadow: 0 0 10px rgb(255, 255, 255); 
     font-family: 'nasalization', sans-serif; 
     text-align: left;
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
 }
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }

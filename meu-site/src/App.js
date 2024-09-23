@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import './App.css';
 import Sobremim from './sobre-mim';
+import Currículo from './curriculo';
 function App() {
   return (
   <div >
@@ -21,6 +22,9 @@ function App() {
     </div>
 
     <Sobremim /> {/* Incluindo sobremim */}
+
+    <Currículo /> {/* Incluindo Curriculo */}
+
 
 
 
