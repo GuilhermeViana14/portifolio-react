@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'nasalization';
+    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
+  }
+  
+
+
+.navbar {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: black;
+  background-size: cover; 
+  background-position: center center;
+  background-attachment: fixed;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+  }
+  
+  .navbar.hidden {
+    transform: translateY(-100%);
+    box-shadow: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin: 0 75px;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'nasalization', sans-serif; 
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    display: inline-block;
+  }
+  
+  .nav-links a:hover {
+    color: #ffffff; 
+    transform: scale(1.1);
+    animation: oscillate 0.5s ease-in-out infinite;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7); 
+  }
+
+ 
+
+  @keyframes oscillate {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+  }
+  
