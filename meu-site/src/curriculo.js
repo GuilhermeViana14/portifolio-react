@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import './curriculo.css';
+import './css/curriculo.css';
 
 const Curriculo = () => {
     const cards = [
@@ -25,9 +25,9 @@ const Curriculo = () => {
             >
                 {cards.map(card => (
                     <SwiperSlide key={card.id}>
-                        <div className="card">
-                            <h3>{card.title}</h3>
-                            <p>{card.content}</p>
+                        <div className="card-curriculo">
+                            <h3 className='card-curriculo-h3'>{card.title}</h3>
+                            <p className='card-curriculo-p'>{card.content}</p>
                         </div>
                     </SwiperSlide>
                 ))}

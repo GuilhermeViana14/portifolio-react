@@ -1,5 +1,5 @@
 import React from 'react';
-import './terra.css';
+import './css/terra.css';
 
 const Terra = () => {
     return (

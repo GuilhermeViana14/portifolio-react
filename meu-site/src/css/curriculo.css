@@ -8,18 +8,17 @@
     src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
   }
 
-  .container-sobremim {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: flex-start; 
-    gap: 120px;
+
+.titulo_curriculo {
+    font-family: 'varino', sans-serif;
+    font-size: 30px;
+    color: white;
     position: absolute;
-    top: 80%;
-    left: 10%;
+    top:140%;
+    left:10%;
+    animation: slideInFromLeft 1s ease-out;
 }
-
-
-.card-sobremim {
+.card-curriculo{
     width: 25em; 
     height: 30em; 
     background: rgba(143, 142, 142, 0.507);
@@ -32,9 +31,11 @@
     flex-direction: column;
     top: 80%;
     left: 10%;
+    margin-left: 45px;
 }
-  
-.card-sobremim span {
+
+
+.card-curriculo-h3{
     font-weight: bold;
     color: white;
     text-align: center;
@@ -44,8 +45,9 @@
     font-family: 'varino', sans-serif; 
     margin-bottom: 28px;
 }
-  
-.card-sobremim .info {
+
+
+.card-curriculo-p{
     margin-top: 25px;
     font-weight: 400;
     color: white;
@@ -54,17 +56,13 @@
     font-size: 1em; 
     margin: 1em;
     font-family: 'nasalization', sans-serif; 
-
 }
 
-
-.imagem-card-sobremim {
-    width: 25%; 
-    height: auto;
-    border-radius: 10px; 
-    margin-top: 20px; 
-    margin-left: auto; 
-    margin-right: auto;
+.swiper-container {
+    width: 100%;
+    height: auto; /* Altura definida para o Swiper */
+    overflow: hidden; /* Esconde conteúdo extra */
+    margin: 20px 0; /* Espaço em cima e embaixo */
+    top: 160%;
+    position: absolute;
 }
-
-  
