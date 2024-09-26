@@ -12,7 +12,7 @@ function App() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
         />
         
-        <Navbar /> {/* Incluindo a Navbar */}
+        <Navbar />
 
         <header>
           <h1 className='titulo'>Guilherme<br />viana</h1>
@@ -42,10 +42,10 @@ function App() {
           </div>
         </header>
         
-        <Sobremim /> {/* Incluindo Sobremim */}
-        <Curriculo /> {/* Incluindo Curriculo */}
+        <Sobremim /> 
+        <Curriculo /> 
         
-        <footer></footer> {/* Footer vazio para ser estilizado */}
+        <footer></footer>
       </body>
     </html>
   );

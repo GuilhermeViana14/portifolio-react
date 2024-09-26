@@ -23,10 +23,6 @@
   z-index: 10;
   }
   
-  .navbar.hidden {
-    transform: translateY(-100%);
-    box-shadow: none;
-  }
   
   .nav-links {
     display: flex;
@@ -35,7 +31,7 @@
   
   .nav-links li {
     display: inline-block;
-    margin: 0 75px;
+    margin: 0 150px;
   }
   
   .nav-links a {
