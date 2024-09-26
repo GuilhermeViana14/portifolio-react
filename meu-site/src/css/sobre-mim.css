@@ -8,13 +8,31 @@
     src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
   }
 
+  .titulo-sobremim{
+    color: black;
+    text-align: center;
+    font-family: varino ;
+    margin-top: 60px;
+    animation: slideInFromLeft 1s ease-out;
+
+}
+
+.sub-titulo-sobremim{
+    color: black;
+    text-align: center;
+    font-family: nasalization ;
+    margin-top: 15px;
+    animation: slideInFromLeft 1s ease-out;
+
+}
+  
   .container-sobremim {
     display: flex; 
     justify-content: space-around; 
     align-items: flex-start; 
     gap: 120px;
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 10%;
 }
 
@@ -22,12 +40,9 @@
 .card-sobremim {
     width: 25em; 
     height: 30em; 
-    background: rgba(143, 142, 142, 0.507);
+    background: #565c66;
     transition: 1s ease-in-out;
-    backdrop-filter: blur(10px); 
-    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     top: 80%;
@@ -36,7 +51,7 @@
   
 .card-sobremim-span {
     font-weight: bold;
-    color: white;
+    color: #eeeeee;
     text-align: center;
     display: block;
     font-size: 1.2em; 
@@ -48,7 +63,7 @@
 .card-sobremim .info {
     margin-top: 25px;
     font-weight: 400;
-    color: white;
+    color: #eeeeee;
     display: block;
     text-align: center;
     font-size: 1em; 
@@ -58,14 +73,26 @@
 }
 
 
+
 .imagem-card-sobremim {
-    width: 25%; 
+    width: 7%; 
     height: auto;
     border-radius: 10px; 
-    margin-top: 80%; 
-    margin-left: 35%; 
-    margin-right: auto;
+    align-items: center;
     position: absolute;
+    margin-left: 10%;
+    top: 70%;
 }
 
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
   

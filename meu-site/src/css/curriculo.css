@@ -1,68 +1,135 @@
 @font-face {
     font-family: 'varino';
-    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\Varino - Normal.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
+    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\Varino - Normal.otf') format('truetype'); 
   }
 
  @font-face {
     font-family: 'nasalization';
-    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
+    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); 
   }
 
-
-.titulo_curriculo {
-    font-family: 'varino', sans-serif;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top:140%;
-    left:10%;
-    animation: slideInFromLeft 1s ease-out;
-}
-.card-curriculo{
-    width: 25em; 
-    height: 30em; 
-    background: rgba(143, 142, 142, 0.507);
-    transition: 1s ease-in-out;
-    backdrop-filter: blur(10px); 
-    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+  .container-curriculo {
+    width: 300px;
+    padding: 20px;
+    background-color:#565c66;;
     display: flex;
     flex-direction: column;
-    top: 80%;
-    left: 10%;
-    margin-left: 45px;
-}
-
-
-.card-curriculo-h3{
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    display: block;
-    font-size: 1.2em; 
-    margin-top: 29px;
-    font-family: 'varino', sans-serif; 
-    margin-bottom: 28px;
-}
-
-
-.card-curriculo-p{
-    margin-top: 25px;
-    font-weight: 400;
-    color: white;
-    display: block;
-    text-align: center;
-    font-size: 1em; 
-    margin: 1em;
-    font-family: 'nasalization', sans-serif; 
-}
-
-.swiper-container {
-    width: 100%;
-    height: auto; /* Altura definida para o Swiper */
-    overflow: hidden; /* Esconde conteúdo extra */
-    margin: 20px 0; /* Espaço em cima e embaixo */
-    top: 160%;
+    gap: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
     position: absolute;
+    top: 170vh;
+    left: 10%;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    user-select: none;
+    color: white;
+    font-family: 'varino';
+  }
+  
+  .option {
+    font-weight: 500;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 10px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+  }
+  
+  .option:hover {
+    background-color: #778b96;
+  }
+  
+  .option .icon {
+    width: 24px;
+  }
+  
+  .input {
+    position: absolute;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .input:checked + .option {
+    color: #000000;
+    background-color: #778b96;
+    border: 1px solid #7f90a5;
+    border-radius: 8px;
+  }
+  
+  .option:has(input:checked) {
+    color: #000000;
+    background-color: #778b96;
+    border: 1px solid #7f90a5;
+    border-radius: 8px;
+  }
+  
+
+
+
+.info-card {
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    background-color: #565c66;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 200%;
+    color: white;
+    top: -5%;
+    transition: opacity 0.5s ease-in-out; 
+    font-family: 'nasalization';
 }
+
+/* Classes para animações */
+.dynamic-out {
+    animation: dynamic-out 0.5s forwards; 
+}
+
+.dynamic-in {
+    animation: dynamic-in 0.5s forwards; 
+}
+
+
+
+@keyframes dynamic-in {
+    0% {
+        transform: scale(0.8) rotate(10deg); 
+        opacity: 0; 
+    }
+    50% {
+        transform: scale(1.05) rotate(-5deg); 
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(1) rotate(0deg); 
+        opacity: 1; 
+    }
+}
+
+@keyframes dynamic-out {
+    0% {
+        transform: scale(1) rotate(0deg); 
+        opacity: 1; 
+    }
+    50% {
+        transform: scale(1.05) rotate(5deg); 
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(0.8) rotate(-10deg); 
+        opacity: 0; 
+    }
+}
+  

@@ -5,9 +5,10 @@ const Sobremim = () => {
     return (
         
         <>
+            <h1 className='titulo-sobremim'>Conheça mais Sobre mim</h1>
             <div className="container-sobremim"> 
                 <div className="card-sobremim">
-                    <span className='card-sobremim-span'>Sobre mim</span>
+                    <span className='card-sobremim-span'>Quem sou eu ?</span>
                     <p className="info">
                         Meu nome é Guilherme Viana e minha paixão por tecnologia começou cedo, especialmente com jogos, que despertaram meu interesse em seguir uma carreira na área de TI.
                         <br/><br/><br/> 
@@ -25,6 +26,15 @@ const Sobremim = () => {
                         Acredito que a tecnologia pode ser uma força transformadora e estou animado para fazer parte dessa evolução.
                     </p>
                     <img src="pc-interesse.png" alt="Descrição da Imagem" className="imagem-card-sobremim" />
+                </div>
+                <div className="card-sobremim">
+                    <span className='card-sobremim-span'>Obejtivos !</span>
+                    <p className="info">
+                        Tenho um forte interesse em desenvolvimento web, inteligência artificial e automação. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades.
+                        <br/><br/>
+                        Acredito que a tecnologia pode ser uma força transformadora e estou animado para fazer parte dessa evolução.
+                    </p>
+                    <img src="objetivos.png" alt="Descrição da Imagem" className="imagem-card-sobremim" />
                 </div>
             </div>   
         </>
