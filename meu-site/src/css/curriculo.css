@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'varino';
-    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\Varino - Normal.otf') format('truetype'); 
-  }
+  font-family: 'varino';
+  src: url('../assents/varino-normal.otf') format('opentype');
+}
 
- @font-face {
-    font-family: 'nasalization';
-    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); 
-  }
 
+@font-face {
+  font-family: 'nasalization';
+  src: url('../assents/nasalization-rg.otf') format('opentype');
+}
   .container-curriculo {
     width: 300px;
     padding: 20px;
