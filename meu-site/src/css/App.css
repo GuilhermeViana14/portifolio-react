@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'varino';
+  src: url('C:/Users/guilh/OneDrive/Desktop/portifolio-react-1/meu-site/public/Varino - Normal.otf') format('truetype'); 
+}
+
+header {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url('C:/Users/guilh/OneDrive/Desktop/portifolio-react-1/meu-site/public/background.jpg');
+  background-position: center;
+  color: white;
+  border-radius: 30px;
+  background-attachment: fixed;
+}
+
+
+html, body {
+  height: 100%; 
+  margin: 0; 
+  display: flex;
+  flex-direction: column; 
+}
+
+
+footer {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 70%;
+  height: 60vh; 
+  display: flex;
+  padding: 10px; 
+  align-items: center;
+  background-image: url('C:/Users/guilh/OneDrive/Desktop/portifolio-react-1/meu-site/public/background.jpg');
+  background-position: center;
+  background-attachment: fixed;
+}
+.titulo {
+  position: absolute;
+  font-family: 'varino', sans-serif;
+  font-size: 3vw; 
+  line-height: 1.2;
+  font-weight: 200;
+  animation: slideInFromLeft 1s ease-out;
+  left: 15%;
+  top: 20%;
+}
+
+.sub-titulo {
+  position: absolute;
+  font-family: 'varino', sans-serif;
+  font-size: 1vw; 
+  line-height: 1.2;
+  font-weight: 200;
+  margin-top: 20px;
+  display: flex;
+  animation: slideInFromLeft 1s ease-out;
+  left: 15%;
+  top: 37%;
+}
+
+
+.social-icons {
+  position: absolute;
+  display: flex;
+  gap: 1vw; 
+  margin-left: 5px;
+  left: 26%;
+  top: 38.5%;
+  animation: slideInFromLeft 1s ease-out;
+
+}
+
+.icon-link {
+  color: #ffffff;
+  font-size: 1.4vw; /* Ajusta o tamanho do ícone conforme a tela */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-link:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 8vw; 
+  }
+  
+  .sub-titulo {
+    font-size: 6vw;
+  }
+
+  .social-icons {
+    gap: 10vw;
+  }
+
+  .icon-link {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 10vw;
+  }
+
+  .sub-titulo {
+    font-size: 8vw;
+  }
+
+  .social-icons {
+    gap: 12vw;
+  }
+
+  .icon-link {
+    font-size: 12vw;
+  }
+}

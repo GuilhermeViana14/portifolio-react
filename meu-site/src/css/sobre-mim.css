@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'varino';
+    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\Varino - Normal.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
+  }
+
+ @font-face {
+    font-family: 'nasalization';
+    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
+  }
+
+  .titulo-sobremim{
+    color: black;
+    text-align: center;
+    font-family: varino ;
+    margin-top: 60px;
+    animation: slideInFromLeft 1s ease-out;
+
+}
+
+.sub-titulo-sobremim{
+    color: black;
+    text-align: center;
+    font-family: nasalization ;
+    margin-top: 15px;
+    animation: slideInFromLeft 1s ease-out;
+
+}
+  
+  .container-sobremim {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    gap: 120px;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+}
+
+
+.card-sobremim {
+    width: 25em; 
+    height: 30em; 
+    background: #565c66c9;
+    transition: 1s ease-in-out;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 80%;
+    left: 10%;
+}
+  
+.card-sobremim-span {
+    font-weight: bold;
+    color: #eeeeee;
+    text-align: center;
+    display: block;
+    font-size: 1.2em; 
+    margin-top: 29px;
+    font-family: 'varino', sans-serif; 
+    margin-bottom: 28px;
+}
+  
+.card-sobremim .info {
+    margin-top: 25px;
+    font-weight: 400;
+    color: #eeeeee;
+    display: block;
+    text-align: center;
+    font-size: 1em; 
+    margin: 1em;
+    font-family: 'nasalization', sans-serif; 
+
+}
+
+
+
+.imagem-card-sobremim {
+    width: 7%; 
+    height: auto;
+    border-radius: 10px; 
+    align-items: center;
+    position: absolute;
+    margin-left: 10%;
+    top: 70%;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
