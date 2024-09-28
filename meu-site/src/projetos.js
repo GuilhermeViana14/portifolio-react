@@ -1,23 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './css/projetos.css'; // Estilos para os projetos
 
 const Projetos = () => {
-  const [projetos, setProjetos] = useState([]);
-
-  useEffect(() => {
-    // Função para buscar os dados dos projetos da API
-    const fetchProjetos = async () => {
-      try {
-        const response = await axios.get('http://localhost:5000/projetos');
-        setProjetos(response.data);
-      } catch (error) {
-        console.error('Erro ao buscar projetos:', error);
-      }
-    };
-
-    fetchProjetos();
-  }, []);
+  // Dados estáticos dos projetos
+  const projetos = [
+    {
+      id: 1,
+      nome: 'Mobile app',
+      descricao: 'App para organizar rotina Link:https://github.com/GuilhermeViana14/Organizador-de-tarefas',
+      imagem: '/caminho/para/imagem1.jpg', // Substitua pelo caminho da sua imagem
+    },
+    {
+      id: 2,
+      nome: 'Projeto 2',
+      descricao: 'Descrição do Projeto 2',
+      imagem: '/caminho/para/imagem2.jpg', // Substitua pelo caminho da sua imagem
+    },
+    {
+      id: 3,
+      nome: 'Projeto 3',
+      descricao: 'Descrição do Projeto 3',
+      imagem: '/caminho/para/imagem3.jpg', // Substitua pelo caminho da sua imagem
+    },
+  ];
 
   return (
     <div className="projetos-container">
