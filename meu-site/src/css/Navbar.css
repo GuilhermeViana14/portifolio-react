@@ -1,9 +1,13 @@
 @font-face {
-    font-family: 'nasalization';
-    src: url('C:\Users\guilh\OneDrive\Desktop\portifolio-react-1\meu-site\public\nasalization-rg.otf') format('truetype'); /* ajuste o nome do arquivo e o formato conforme necessário */
-  }
-  
+  font-family: 'varino';
+  src: url('../assents/varino-normal.otf') format('opentype');
+}
 
+
+@font-face {
+  font-family: 'nasalization';
+  src: url('../assents/nasalization-rg.otf') format('opentype');
+}
 
 .navbar {
     display: flex;

@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'varino';
-  src: url('C:/Users/guilh/OneDrive/Desktop/portifolio-react-1/meu-site/public/Varino - Normal.otf') format('truetype'); 
+  src: url('../assents/varino-normal.otf') format('opentype');
 }
 
 header {
   height: 80vh;
   display: flex;
   align-items: center;
-  background-image: url('C:/Users/guilh/OneDrive/Desktop/portifolio-react-1/meu-site/public/background.jpg');
+  background-image: url('../assents/background.jpg');
   background-position: center;
   color: white;
   border-radius: 30px;
@@ -31,7 +31,7 @@ footer {
   display: flex;
   padding: 10px; 
   align-items: center;
-  background-image: url('C:/Users/guilh/OneDrive/Desktop/portifolio-react-1/meu-site/public/background.jpg');
+  background-image: url('../assents/background.jpg');
   background-position: center;
   background-attachment: fixed;
 }
