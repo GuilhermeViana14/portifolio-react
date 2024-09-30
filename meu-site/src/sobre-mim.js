@@ -21,18 +21,15 @@ const Sobremim = () => {
                 <div className="card-sobremim">
                     <span className='card-sobremim-span'>Interesses</span>
                     <p className="info">
-                        Tenho um forte interesse em desenvolvimento web, inteligência artificial e automação. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades.
-                        <br/><br/>
-                        Acredito que a tecnologia pode ser uma força transformadora e estou animado para fazer parte dessa evolução.
+                    
+                        Tenho um forte interesse em desenvolvimento web e estou constantemente em busca de novas tecnologias para expandir minhas habilidades.<br></br><br></br><br></br> Além disso, como hobby, sou apaixonado por jogos, sem me limitar a um único gênero; na verdade, gosto de explorar a maioria deles, o que enriquece minha criatividade e perspectiva.
                     </p>
                     <img src="pc-interesse.png" alt="Descrição da Imagem" className="imagem-card-sobremim" />
                 </div>
                 <div className="card-sobremim">
                     <span className='card-sobremim-span'>Obejtivos !</span>
                     <p className="info">
-                        Tenho um forte interesse em desenvolvimento web, inteligência artificial e automação. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades.
-                        <br/><br/>
-                        Acredito que a tecnologia pode ser uma força transformadora e estou animado para fazer parte dessa evolução.
+                    Meu objetivo de vida é me tornar um desenvolvedor full stack, criando soluções inovadoras que melhorem a experiência do usuário na web e em jogos. Estou comprometido em aprimorar minhas<br></br><br></br> <br></br> habilidades e acompanhar as tendências do mercado, unindo minha paixão por tecnologia e entretenimento para desenvolver experiências imersivas e memoráveis.
                     </p>
                     <img src="objetivos.png" alt="Descrição da Imagem" className="imagem-card-sobremim" />
                 </div>
