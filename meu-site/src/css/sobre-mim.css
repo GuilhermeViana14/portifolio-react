@@ -3,96 +3,92 @@
   src: url('../assents/varino-normal.otf') format('opentype');
 }
 
-
 @font-face {
   font-family: 'nasalization';
   src: url('../assents/nasalization-rg.otf') format('opentype');
 }
-  .titulo-sobremim{
-    color: black;
-    text-align: center;
-    font-family: varino ;
-    margin-top: 60px;
-    animation: slideInFromLeft 1s ease-out;
 
+.titulo-sobremim {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: varino;
+  margin-top: 60px;
+  animation: slideInFromLeft 1s ease-out;
 }
 
-.sub-titulo-sobremim{
-    color: black;
-    text-align: center;
-    font-family: nasalization ;
-    margin-top: 15px;
-    animation: slideInFromLeft 1s ease-out;
-
+.container-sobremim {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: flex-start; 
+  gap: 120px;
+  top: 100%;
+  left: 10%;
 }
-  
-  .container-sobremim {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: flex-start; 
-    gap: 120px;
-    position: absolute;
-    top: 100%;
-    left: 10%;
-}
-
 
 .card-sobremim {
-    width: 25em; 
-    height: 30em; 
-    background: #565c66c9;
-    transition: 1s ease-in-out;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    top: 80%;
-    left: 10%;
+  width: 25em; 
+  height: 30em; 
+  background: transparent;
+  transition: box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out; /* Transição só para sombra e brilho */
+  border: solid 1px white;
+  display: flex;
+  flex-direction: column;
+  top: 80%;
+  left: 10%;
+  margin-top: 50px;
 }
-  
+
 .card-sobremim-span {
-    font-weight: bold;
-    color: #eeeeee;
-    text-align: center;
-    display: block;
-    font-size: 1.2em; 
-    margin-top: 29px;
-    font-family: 'varino', sans-serif; 
-    margin-bottom: 28px;
+  font-weight: bold;
+  color: #eeeeee;
+  text-align: center;
+  display: block;
+  font-size: 1.2em; 
+  margin-top: 29px;
+  font-family: 'varino', sans-serif; 
+  margin-bottom: 28px;
 }
-  
+
 .card-sobremim .info {
-    margin-top: 25px;
-    font-weight: 400;
-    color: #eeeeee;
-    display: block;
-    text-align: center;
-    font-size: 1em; 
-    margin: 1em;
-    font-family: 'nasalization', sans-serif; 
-
+  margin-top: 25px;
+  font-weight: 400;
+  color: #eeeeee;
+  display: block;
+  text-align: center;
+  font-size: 1em; 
+  margin: 1em;
+  font-family: 'nasalization', sans-serif; 
 }
-
-
 
 .imagem-card-sobremim {
-    width: 7%; 
-    height: auto;
-    border-radius: 10px; 
-    align-items: center;
-    position: absolute;
-    margin-left: 10%;
-    top: 70%;
+  width: 100px; /* Tamanho fixo, ajuste conforme necessário */
+  height: 100px; /* Tamanho fixo, ajuste conforme necessário */
+  border-radius: 10px; 
+  display: block; 
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 140px;
+  transition: none; /* Garante que não haja transformação ao passar o mouse */
 }
 
+.card-sobremim:hover {
+  box-shadow: 0 0 20px white; /* Efeito de brilho ao passar o mouse */
+  filter: brightness(1.2); /* Aumenta o brilho levemente */
+}
+
+.card-sobremim:hover .imagem-card-sobremim {
+  transform: scale(1); /* Assegura que a imagem não escala */
+  transition: none; /* Garante que não haja transição na imagem */
+}
 
 @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

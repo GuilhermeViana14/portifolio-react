@@ -10,11 +10,10 @@
 }
 
 .navbar {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: black;
   background-size: cover; 
   background-position: center center;
   background-attachment: fixed;
@@ -23,11 +22,13 @@
   width: 100%;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease; /* Para animação ao ocultar/exibir */
   z-index: 10;
-  }
-  
-  
+}
+
+.navbar.hidden {
+  transform: translateY(-100%); /* Move a navbar para fora da tela */
+}
   .nav-links {
     display: flex;
     margin: 0 auto;

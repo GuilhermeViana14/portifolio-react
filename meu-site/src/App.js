@@ -1,54 +1,71 @@
+import React, { useEffect, useRef } from 'react';
+import Intro from './intro';
 import Navbar from './Navbar';
 import Sobremim from './sobre-mim';
 import Curriculo from './curriculo';
-import Projetos from './projetos';
+import Contato from './contato';
+
 import './css/App.css';
+import './css/intro.css';
+
 
 function App() {
-  return (
-    <html>
-      <body>
-          <link 
-            rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
-          />
-          
-          <Navbar />
+  const videoRef = useRef(null);
 
-          <header>
-            <h1 className='titulo'>Guilherme<br />viana</h1>
-            <h2 className="sub-titulo">Redes Sociais:</h2>
-            <div className="social-icons">
-              <a 
-                href="https://www.instagram.com/gui.viana14/?next=%2F" 
-                className="icon-link" 
-                aria-label="Instagram"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/guilherme-viana-filgueiras-4b5211234/" 
-                className="icon-link" 
-                aria-label="LinkedIn"
-              >
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a 
-                href="https://github.com/GuilhermeViana14" 
-                className="icon-link" 
-                aria-label="GitHub"
-              >
-                <i className="fab fa-github"></i>
-              </a>
-            </div>
-          </header>
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch((error) => {
+        console.error('Erro ao reproduzir o vídeo: ', error);
+      });
+    }
+  }, []);
+  
+  
+  
+  return (
+    <>
+    
+        <body>
           
-          <Sobremim /> 
-          <Curriculo /> 
+            
+            <Navbar />
+
+            <header>
+              <video
+                ref={videoRef}
+                muted
+                loop
+                playsInline
+                className="video-bg"
+              >
+                <source src="background2.mp4" type="video/mp4" />
+                Seu navegador não suporta a reprodução de vídeos.
+              </video>
+              
+              <div className="overlay"></div>
+              
+              <Intro />
+            
+            </header>
           
-          <footer><Projetos /></footer>
-        </body>
-    </html>
+          <section id="sobre-mim-section">
+          <Sobremim/>
+          </section>
+            
+          <section id="Curriculo-section">
+          <Curriculo/>
+          </section>
+          
+          </body>
+          <footer>
+          <section id="Contato-section">
+          <Contato/>
+          </section>
+          <div className="footer-overlay"></div>
+          </footer>
+    </>
+    
   );
 }
 
