@@ -1,0 +1,16 @@
+.title-container {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    background-color: transparent; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+  }
+  
+  .typing-effect {
+    font-family: 'Courier New', monospace; 
+    font-size: 3rem; 
+    white-space: nowrap; 
+    overflow: hidden; 
+  }
+
+  

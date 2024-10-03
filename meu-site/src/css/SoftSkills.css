@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'varino';
+    src: url('../assents/varino-normal.otf') format('opentype');
+}
+
+.container-softskills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.titulo-Softskills {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: varino;
+    margin-top: 10%;
+    animation: slideInFromLeft 1s ease-out;
+    font-size: 40px;
+}
+
+.card-softskills {
+    margin-top: 50px;
+    border: 2px solid white;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    width: calc(22% - 20px);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    height: 200px;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px) scale(0.8); /* Começa deslocado e menor */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transições suaves */
+}
+
+.card-softskills.fade-in {
+    opacity: 1; /* Fica visível */
+    transform: translateY(0) scale(1); /* Retorna à posição original e escala */
+}
+
+.card-softskills:hover {
+    box-shadow: 0 0 20px white;
+    filter: brightness(1.2);
+}
+
+.card-softskills-span {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'varino';
+    margin-top: 30px;
+}
+
+.card-softskills .fa-icon {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 45px;
+    transition: color 0.3s ease;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
