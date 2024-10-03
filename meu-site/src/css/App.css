@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'varino';
+  src: url('../assents/varino-normal.otf') format('opentype');
+}
+html, body {
+  margin: 0;
+  padding: 0; 
+  height: 100%;
+}
+
+header {
+  height: 110vh;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.651);
+
+}
+
+body {
+  background: linear-gradient(45deg, #414141, #414141 35%, rgba(116, 116, 116, 0.7), rgba(100, 100, 100, 0.9)),
+              linear-gradient(to bottom, #393939, #585858 50%, #666666 51%, #494949);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+footer {
+  position: relative; 
+  background-image: url('../assents/footer.png');
+  text-align: center; 
+  margin-top: 5%;
+  background-size: cover;
+  height: 45vh;
+  
+  margin-bottom: 20px;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 60px; 
+  position: relative;
+  z-index: 2; 
+}
+
+.social-icon {
+  color: white; 
+  font-size: 60px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: rgba(255, 255, 255, 0.8); 
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3); 
+}

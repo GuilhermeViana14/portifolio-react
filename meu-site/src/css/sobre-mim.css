@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'varino';
+  src: url('../assents/varino-normal.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'nasalization';
+  src: url('../assents/nasalization-rg.otf') format('opentype');
+}
+
+.titulo-sobremim {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: varino;
+  margin-top: 60px;
+  animation: slideInFromLeft 1s ease-out;
+  font-size: 40px;
+}
+
+.container-sobremim {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: flex-start; 
+  gap: 120px;
+  top: 100%;
+  left: 10%;
+}
+
+.card-sobremim {
+  width: 25em; 
+  height: 30em; 
+  background: transparent;
+  transition: box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out; 
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  top: 80%;
+  left: 10%;
+  margin-top: 50px;
+}
+
+.card-sobremim-span {
+  font-weight: bold;
+  color: #eeeeee;
+  text-align: center;
+  display: block;
+  font-size: 1.2em; 
+  margin-top: 29px;
+  font-family: 'varino', sans-serif; 
+  margin-bottom: 28px;
+}
+
+.card-sobremim .info {
+  margin-top: 25px;
+  font-weight: 400;
+  color: #eeeeee;
+  display: block;
+  text-align: center;
+  font-size: 1em; 
+  margin: 1em;
+  font-family: 'nasalization', sans-serif; 
+}
+
+.icon-container {
+  margin-top: 10px; /* Espaço entre o texto e o ícone */
+  text-align: center; /* Centraliza o ícone */
+}
+
+.card-icon {
+  margin-top: 40px;
+  font-size: 55px; /* Tamanho do ícone */
+  color: #ffffff; /* Cor do ícone (ajuste conforme necessário) */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave ao hover */
+}
+
+.card-icon:hover {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+.card-sobremim:hover {
+  box-shadow: 0 0 20px white; 
+  filter: brightness(1.2); 
+}
+
+
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
