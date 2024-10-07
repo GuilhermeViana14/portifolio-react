@@ -96,6 +96,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 25px;
+    margin-top: 22vh;
 }
 
 .dynamic-out {
@@ -109,12 +110,12 @@
 
 
 .icon {
-  animation: float 2s ease-in-out infinite; /* Animação contínua e suave */
+  animation: float 2s ease-in-out infinite; 
 }
 
 .icon-text {
-  display: inline-block; /* Para garantir que o texto permaneça fixo */
-  margin-left: 8px; /* Espaçamento entre o ícone e o texto */
+  display: inline-block; 
+  margin-left: 8px; 
 }
 
 
@@ -122,13 +123,13 @@
 
 @keyframes float {
   0% {
-      transform: translateY(0); /* Posição inicial */
+      transform: translateY(0); 
   }
   50% {
-      transform: translateY(-5px); /* Move 5 pixels para cima */
+      transform: translateY(-5px); 
   }
   100% {
-      transform: translateY(0); /* Volta à posição original */
+      transform: translateY(0); 
   }
 }
 
